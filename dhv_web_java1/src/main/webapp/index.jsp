@@ -1,22 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>San Joanquin valley town hall</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
-<style>
-    body{
-        background-color:#FACD8A;
-    }
-    h1{
-        color:#363636
-    }
-    h2{
-        font-style: italic;
-        border-bottom: 3px solid #EF9C00;
-    }
-</style>
 <body>
-<h1>San Joanquin valley town hall</h1>
-<p>Welcome to san Joaquin valley Town Hall</p>
-<p>We have some amazing speakers in store for you this season!</p>
-<p><a href="speakers.html">Speaker information</a></p>
+    <div id="calculator">
+        <input id="display" readonly>
+        <div id="keys">
+            <button onclick="appendToDisplay('+')">
+                +
+            </button>
+            <button onclick="appendToDisplay('7')"> 7 </button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()">C</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
